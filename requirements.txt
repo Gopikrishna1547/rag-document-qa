@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-text-splitters
+faiss-cpu
+sentence-transformers
+transformers
+torch
+pypdf
+python-dotenv
+streamlit
