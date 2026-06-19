@@ -16,11 +16,11 @@ log = logging.getLogger(__name__)
 # ── Page config ──
 st.set_page_config(
     page_title="RAG Document Q&A",
-    page_icon="📄",
+    page_icon=" ",
     layout="centered"
 )
 
-st.title("📄 RAG Document Q&A System")
+st.title(" RAG Document Q&A System")
 st.markdown("Upload any PDF and ask questions about it!")
 st.divider()
 
@@ -96,7 +96,7 @@ if uploaded_file:
     with st.spinner("Reading and processing your PDF..."):
         vector_store, num_pages, num_chunks = process_pdf(uploaded_file)
 
-    st.success(f"✅ PDF loaded! {num_pages} pages, {num_chunks} chunks created.")
+    st.success(f" PDF loaded! {num_pages} pages, {num_chunks} chunks created.")
     st.divider()
 
     st.subheader("Ask a question about your document")
@@ -119,7 +119,7 @@ if uploaded_file:
             st.warning("Please type a question first!")
 
 else:
-    st.info("👆 Upload a PDF file above to get started!")
+    st.info(" Upload a PDF file above to get started!")
 
     st.markdown("### Example questions you can ask:")
     st.markdown("""
