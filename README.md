@@ -42,6 +42,8 @@ cd rag-document-qa
 **2. Install dependencies**
 ```bash
 pip install -r requirements.txt
+for MAC
+python3.13 -m pip install -r requirements.txt 
 ```
 
 **3. Add your PDF**
@@ -50,7 +52,7 @@ Copy any PDF file into the `data/` folder.
 
 **4. Run**
 ```bash
-python3 rag_pipeline.py
+python3.13 -m streamlit run app.py
 ```
 
 **5. Ask questions!**
